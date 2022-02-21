@@ -1,0 +1,33 @@
+{
+  "name": "embarkdash",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashikrnhq04/embarkdashboard.git"
+  },
+  "keywords": [
+    "dashboard",
+    "ui",
+    "frontend"
+  ],
+  "author": "Ashik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashikrnhq04/embarkdashboard/issues"
+  },
+  "homepage": "https://github.com/ashikrnhq04/embarkdashboard#readme",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.0"
+  },
+  "dependencies": {
+    "materialize-css": "^1.0.0-rc.2"
+  },
+  "description": ""
+}

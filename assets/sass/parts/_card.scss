@@ -1,0 +1,55 @@
+.embark-card {
+  width: 80%;
+  margin: 0 auto;
+  .card-content {
+    border-radius: 15px;
+    padding: 20px 10px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+  .card-head {
+    margin: 30px 0px;
+    p {
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .heading {
+      margin: 5px 10px;
+      font-size: 40px;
+      font-weight: 700;
+    }
+  }
+  .card-body {
+    width: 65%;
+    margin: 0 auto;
+    @media #{$medium-and-down} {
+      width: 75%;
+    }
+    .heading {
+      font-size: 16px;
+      font-weight: 700;
+      font-family: $opensans;
+    }
+    p {
+      margin: 5px 0px !important;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 5px;
+      }
+    }
+  }
+  .card-footer {
+    padding: 20px 10px;
+    justify-content: center;
+    .btn {
+      font-weight: 700;
+    }
+  }
+  @media #{$medium-and-down} {
+    width: 100%;
+  }
+}

@@ -1,0 +1,118 @@
+#header {
+  @media #{$medium-and-up} {
+    // styles for medium screens and larger
+  }
+  .brand-logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+  .sidenav-trigger {
+    color: $embark-text;
+  }
+
+  &.dashboar-navbar {
+    @media #{$medium-and-down} {
+      z-index: 1200;
+    }
+    .nav-wrapper {
+      .dashboard-container {
+        position: relative;
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: 64px;
+        grid-gap: 10px;
+        align-items: center;
+        @media #{$medium-and-down} {
+          width: 100%;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 56px;
+        }
+      }
+    }
+    &.navbar-shrink {
+      .brand {
+        left: 220px;
+        transition: all 200ms;
+        -webkit-transition: all 200ms;
+        -moz-transition: all 200ms;
+        -ms-transition: all 200ms;
+        -o-transition: all 200ms;
+      }
+    }
+    .brand {
+      position: absolute;
+      left: 0;
+      transition: all 200ms;
+      -webkit-transition: all 200ms;
+      -moz-transition: all 200ms;
+      -ms-transition: all 200ms;
+      -o-transition: all 200ms;
+      @media #{$medium-and-down} {
+        left: 15px;
+      }
+      * {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .brand-logo {
+        position: static;
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+      }
+    }
+    .user-area {
+      @extend .brand;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      right: -5%;
+      * {
+        margin: 0px 5px;
+        @media #{$medium-and-down} {
+          * {
+            margin: 0px 2px;
+          }
+        }
+      }
+      @media #{$medium-and-down} {
+        right: 15px;
+        * {
+          margin: 0px 2px;
+        }
+      }
+      .user-image {
+        width: 50px;
+        height: auto;
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+      }
+    }
+  }
+  nav ul a {
+    text-transform: lowercase;
+  }
+  .mobile-nav {
+    .mobile-logo {
+      padding: 20px 0px;
+      text-align: center;
+    }
+    .sidenav li > a {
+      color: $embark-text;
+      &.btn {
+        color: $embark-text !important;
+      }
+    }
+    .embark-blue-light {
+      color: $embark-text !important;
+    }
+  }
+}

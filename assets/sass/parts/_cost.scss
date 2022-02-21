@@ -1,0 +1,40 @@
+#howmuch {
+  background: $secondary-background;
+  margin-bottom: 0px;
+  .valign-wrapper {
+    @media #{$medium-and-down} {
+      flex-wrap: wrap;
+    }
+  }
+  .content-wrapper {
+    @media #{$medium-and-down} {
+      margin: 20px 0px;
+    }
+    p {
+      margin-top: 5px;
+      @media #{$medium-and-down} {
+        margin: 20px 0px;
+        text-align: center;
+      }
+    }
+    .section-heading {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 60% 40%;
+      align-items: end;
+      text-align: left;
+      .heading-big {
+        margin-bottom: 0;
+        @media #{$medium-and-down} {
+          order: 2;
+        }
+      }
+      @media #{$medium-and-down} {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr;
+        text-align: center;
+        justify-items: center;
+      }
+    }
+  }
+}

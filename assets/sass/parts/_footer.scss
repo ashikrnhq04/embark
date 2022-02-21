@@ -1,0 +1,21 @@
+#footer {
+  background: $footerbackground;
+  color: lighten($embark-text, 100%);
+
+  @media #{$medium-and-down} {
+    text-align: center;
+  }
+  .footer-widget {
+    line-height: 40px;
+  }
+  a,
+  p {
+    color: lighten($embark-text, 100%);
+  }
+  .footer-bottom {
+    p {
+      margin-bottom: 0px;
+      color: #fff;
+    }
+  }
+}
