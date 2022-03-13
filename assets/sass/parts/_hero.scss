@@ -1,24 +1,25 @@
-#hero {
-  h4 {
-    font-size: 24px;
-    font-weight: 600;
+#hero h4 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 992px) {
+  #hero .section {
+    display: grid;
   }
-  .section {
-    @media #{$medium-and-down} {
-      display: grid;
-    }
+}
+
+@media only screen and (max-width: 992px) {
+  #hero .section-media {
+    order: 1;
   }
-  .section-media {
-    @media #{$medium-and-down} {
-      order: 1;
-    }
-  }
-  .section-content {
-    @media #{$medium-and-down} {
-      order: 2;
-      text-align: center;
-      padding-left: 24px;
-      padding-right: 24px;
-    }
+}
+
+@media only screen and (max-width: 992px) {
+  #hero .section-content {
+    order: 2;
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }

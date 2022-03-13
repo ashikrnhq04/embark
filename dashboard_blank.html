@@ -27,27 +27,35 @@
   <body>
     <header id="header" class="navbar-fixed dashboar-navbar">
       <nav class="nav-wrapper white">
-        <div class="dashboard-container">
-          <div class="brand">
-            <a href="dashboard.html" class="brand-logo"
-              ><img src="./media/embark-logo.png" alt=""
-            /></a>
-          </div>
-          <div class="user-area">
-            <button class="btn red hide-on-med-and-down">Pay Now</button>
-            <a class="hide-on-large-only" href="#"
-              ><img src="./media/donate.png" alt=""
-            /></a>
-            <a
-              href="#"
-              data-target="notification-sidebar"
-              class="sidenav-trigger close-notification"
-              class="embark-text"
-              ><i class="fa fa-bell-o fa-2x" aria-hidden="true"></i
-            ></a>
-            <a href="#"
-              ><img class="user-image" src="./media/user.png" alt=""
-            /></a>
+        <div class="row">
+          <div class="col s12 offset-l1 l11">
+            <div class="row">
+              <div class="col s4 l4">
+                <div class="brand">
+                  <a href="dashboard_blank.html" class="brand-logo"
+                    ><img src="./media/embark-logo.png" alt=""
+                  /></a>
+                </div>
+              </div>
+              <div class="col s8 l8">
+                <div class="user-area">
+                  <button class="btn red hide-on-med-and-down">Pay Now</button>
+                  <a class="hide-on-large-only" href="#"
+                    ><img src="./media/donate.png" alt=""
+                  /></a>
+                  <a
+                    href="#"
+                    data-target="notification-sidebar"
+                    class="sidenav-trigger close-notification"
+                    class="embark-text"
+                    ><i class="fa fa-bell-o fa-2x" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><img class="user-image" src="./media/user.png" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
@@ -55,20 +63,33 @@
     <main class="dashboard">
       <div class="dashboard-container">
         <div class="row">
-          <div class="col-12">
-            <h2 class="embark-text">Dashboard content will be placed here</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-              aspernatur rem officia nam assumenda expedita saepe tempora
-              distinctio labore aut veniam sequi quae id ducimus, accusamus
-              ipsam magnam perspiciatis animi.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-              aspernatur rem officia nam assumenda expedita saepe tempora
-              distinctio labore aut veniam sequi quae id ducimus, accusamus
-              ipsam magnam perspiciatis animi.
-            </p>
+          <div class="col s12 offset-l1 l11">
+            <div class="dashboard-inner-content">
+              <div class="dashboard-inner-content-header">
+                <div class="row d-flex align-base">
+                  <div class="col s12">
+                    <div class="section text-m-center">
+                      <h2 class="heading-big embark-text">My Dashboard</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard-inner-content-body">
+                <div class="row">
+                  <div class="col s12">
+                    <div class="section">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Necessitatibus, quia libero consequatur voluptas
+                        suscipit repellendus ad reiciendis laborum sint, quaerat
+                        totam quod molestiae? Dolorem ut vitae id, repellendus
+                        accusamus corporis?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -86,27 +107,27 @@
         <div class="menu-items">
           <ul class="compact-menu">
             <li>
-              <a title="registration and pricing" href="#"
-                ><img src="./media/menu-icons/registration-white.svg" alt=""
+              <a title="my tickets" href="dashboard_ticket.html"
+                ><img src="./media/menu-icons/ticket-white.svg" alt=""
               /></a>
             </li>
             <li>
-              <a title="itinerary" href="#"
+              <a title="itinerary" href="dashboard_itinerary.html"
                 ><img src="./media/menu-icons/itinerary-white.svg" alt=""
               /></a>
             </li>
             <li>
-              <a title="squad" href="#"
+              <a title="squad" href="dashboard_squad.html"
                 ><img src="./media/menu-icons/squade-white.svg" alt=""
               /></a>
             </li>
             <li>
-              <a title="to-dos" href="#"
+              <a title="to-dos" href="dashboard_task.html"
                 ><img src="./media/menu-icons/todos-white.svg" alt=""
               /></a>
             </li>
             <li>
-              <a title="document checklist" href="#"
+              <a title="document checklist" href="dashboard_document.html"
                 ><img src="./media/menu-icons/checklist-white.svg" alt=""
               /></a>
             </li>
@@ -175,15 +196,13 @@
               <div class="collapsible-body">
                 <ul class="extended-menu">
                   <li>
-                    <a href="#"
-                      ><img
-                        src="./media/menu-icons/registration.svg"
-                        alt=""
-                      />registration and pricing</a
+                    <a href="dashboard_ticket.html"
+                      ><img src="./media/menu-icons/ticket.svg" alt="" />my
+                      tickets</a
                     >
                   </li>
                   <li>
-                    <a href="#"
+                    <a href="dashboard_itinerary.html"
                       ><img
                         src="./media/menu-icons/itinerary.svg"
                         alt=""

@@ -1,0 +1,44 @@
+body {
+  main {
+    min-height: 100vh;
+    overflow: hidden;
+    &.login,
+    &.signup,
+    &.passwordrecovery {
+      background: $embark-blue url("/media/form-background.png") no-repeat
+        scroll;
+      background-size: cover;
+      padding: 50px 0px;
+      .row {
+        margin-bottom: 0;
+      }
+    }
+    &.dashboard-shrink {
+      .dashboard-container {
+        width: calc(100% - 150px);
+        transform: translateX(140px);
+        -webkit-transform: translateX(140px);
+        -moz-transform: translateX(140px);
+        -ms-transform: translateX(140px);
+        -o-transform: translateX(140px);
+        transition: all 200ms;
+        -webkit-transition: all 200ms;
+        -moz-transition: all 200ms;
+        -ms-transition: all 200ms;
+        -o-transition: all 200ms;
+      }
+    }
+  }
+}
+
+@import "_hero";
+@import "_tabs";
+@import "_cost";
+
+@import "_card";
+@import "_form";
+@import "_tasklist";
+@import "_events";
+@import "_dashmenu";
+@import "_dashboard";
+@import "_table";

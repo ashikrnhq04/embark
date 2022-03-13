@@ -1,0 +1,40 @@
+.dashboard-container {
+  width: calc(100% - 125px);
+  transition: all 200ms;
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -ms-transition: all 200ms;
+  -o-transition: all 200ms;
+  @media #{$medium-and-down} {
+    width: calc(100% - 10%);
+    margin: auto;
+  }
+}
+.dashboard-inner-content {
+  .dashboard-inner-content-header {
+    @media #{$medium-and-down} {
+      .heading-big {
+        margin-bottom: 0;
+      }
+    }
+    @media #{$medium-and-down} {
+      .mr-30 {
+        margin-right: 0px;
+      }
+      .ml-30 {
+        margin-left: 0px;
+      }
+    }
+  }
+  .dashboard-inner-content-body {
+    @media #{$medium-and-down} {
+      .mr-30 {
+        margin-right: 0px;
+      }
+      .ml-30 {
+        margin-left: 0px;
+      }
+    }
+  }
+}
+@import "dashcard";

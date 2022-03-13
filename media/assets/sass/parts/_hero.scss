@@ -1,0 +1,24 @@
+#hero {
+  h4 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .section {
+    @media #{$medium-and-down} {
+      display: grid;
+    }
+  }
+  .section-media {
+    @media #{$medium-and-down} {
+      order: 1;
+    }
+  }
+  .section-content {
+    @media #{$medium-and-down} {
+      order: 2;
+      text-align: center;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+}

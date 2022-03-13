@@ -15,11 +15,12 @@ body {
     }
     &.dashboard-shrink {
       .dashboard-container {
-        transform: translateX(220px);
-        -webkit-transform: translateX(220px);
-        -moz-transform: translateX(220px);
-        -ms-transform: translateX(220px);
-        -o-transform: translateX(220px);
+        width: calc(100% - 150px);
+        transform: translateX(140px);
+        -webkit-transform: translateX(140px);
+        -moz-transform: translateX(140px);
+        -ms-transform: translateX(140px);
+        -o-transform: translateX(140px);
         transition: all 200ms;
         -webkit-transition: all 200ms;
         -moz-transition: all 200ms;
@@ -30,9 +31,12 @@ body {
   }
 }
 
-@import "_hero";
-@import "_tabs";
-@import "_cost";
-@import "_card";
-@import "_form";
-@import "_dashmenu";
+@import "hero";
+@import "tabs";
+@import "cost";
+@import "card";
+@import "form";
+@import "collapsibleelement";
+@import "dashmenu";
+@import "dashboard";
+@import "table";

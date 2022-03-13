@@ -1,0 +1,106 @@
+.tasklists {
+  padding-left: 40px !important;
+  position: relative;
+  .collapsible {
+    box-shadow: none;
+    border: none;
+  }
+  .timeline {
+    position: absolute;
+    left: 24px;
+    width: 2px;
+    height: calc(100% - 35px);
+    background: #b9bfd5;
+    margin-top: 20px;
+  }
+  .embark-tasklist {
+    border-radius: 10px;
+    padding-left: 30px;
+    border-left: 10px solid $embark-blue;
+    margin: 15px 0px;
+    background: lighten($embark-blue, 45%);
+    .collapsible-header {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+      border: none;
+      padding: 5px 5px 5px 0px !important;
+      background: none;
+      .timelinedot {
+        position: absolute;
+        left: -65px;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        border: 3px solid $embark-blue;
+        padding: 1px;
+        background: #fff;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+        .activetask {
+          width: 100%;
+          height: 100%;
+          background: #fff;
+          border-radius: 100%;
+          -webkit-border-radius: 100%;
+          -moz-border-radius: 100%;
+          -ms-border-radius: 100%;
+          -o-border-radius: 100%;
+          &.active {
+            background: $embark-blue;
+          }
+        }
+      }
+      .icon {
+        position: absolute;
+        height: auto;
+        width: auto;
+        right: 10px;
+        span {
+          margin: 0 5px;
+        }
+      }
+      * {
+        color: $embark-blue;
+      }
+    }
+    .collapsible-body {
+      padding: 5px 5px 5px 0px;
+      border: none;
+      background: none;
+    }
+    &.task--green {
+      background: lighten($embark-green, 60%);
+      border-color: $embark-green;
+      .timelinedot {
+        border-color: $embark-green;
+      }
+      .collapsible-header {
+        .activetask.active {
+          background: $embark-green;
+        }
+        * {
+          color: $embark-green;
+        }
+      }
+    }
+    &.task--orange {
+      background: lighten($embark-orange, 40%);
+      border-color: $embark-orange;
+      .collapsible-header {
+        .timelinedot {
+          border-color: $embark-orange;
+        }
+        .activetask.active {
+          background: $embark-orange;
+        }
+        * {
+          color: $embark-orange;
+        }
+      }
+    }
+  }
+}

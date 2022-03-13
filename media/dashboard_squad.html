@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <header id="header" class="navbar-fixed dashboar-navbar">
+      <nav class="nav-wrapper white">
+        <div class="row">
+          <div class="col s12 offset-l1 l11">
+            <div class="row">
+              <div class="col s4 l4">
+                <div class="brand">
+                  <a href="dashboard_blank.html" class="brand-logo"
+                    ><img src="./media/embark-logo.png" alt=""
+                  /></a>
+                </div>
+              </div>
+              <div class="col s8 l8">
+                <div class="user-area">
+                  <button class="btn red hide-on-med-and-down">Pay Now</button>
+                  <a class="hide-on-large-only" href="#"
+                    ><img src="./media/donate.png" alt=""
+                  /></a>
+                  <a
+                    href="#"
+                    data-target="notification-sidebar"
+                    class="sidenav-trigger close-notification"
+                    class="embark-text"
+                    ><i class="fa fa-bell-o fa-2x" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><img class="user-image" src="./media/user.png" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="dashboard">
+      <!-- dashboard inner content -->
+      <div class="dashboard-container">
+        <div class="row">
+          <div class="col s12 offset-l1 l11">
+            <div class="dashboard-inner-content">
+              <div class="dashboard-inner-content-header">
+                <div class="row d-flex align-base">
+                  <div class="col s12">
+                    <div class="section text-m-center">
+                      <h2 class="heading-big embark-text">my squad</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard-inner-content-body">
+                <div class="row">
+                  <!-- first column -->
+                  <div class="col s12 l5">
+                    <div class="row">
+                      <div class="col s12 no-padding">
+                        <div class="section mr-30">
+                          <h6 class="small text-uppercase text-gray">
+                            Cohort details
+                          </h6>
+                          <!-- dash card -->
+                          <div class="dash-card shadow">
+                            <div class="card-header">
+                              <div class="row d-flex align-center">
+                                <div class="col s8">
+                                  <div class="card-header-content">
+                                    <h6>Cohort capacity</h6>
+                                  </div>
+                                </div>
+                                <div class="col s4">
+                                  <div class="icon text-right">
+                                    <span class="circle-50 embark-blue-light">
+                                      <img
+                                        src="./media/menu-icons/squad.svg"
+                                        alt=""
+                                      />
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-body">
+                              <div
+                                class="step-indicator active space-around my-10"
+                              >
+                                <div class="line"></div>
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                              </div>
+                              <div
+                                class="row d-grid grid-half text-center px-15"
+                              >
+                                <div>
+                                  <h6 class="my-2">3 seats</h6>
+                                  <p class="embark-text my-0 small">maximum</p>
+                                </div>
+                                <div>
+                                  <h6 class="my-2">8 seats</h6>
+                                  <p class="embark-text my-0 small">minimum</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col s12 text-center no-padding">
+                                  <p class="small mt-15">
+                                    The cohort requires a minimum of 3 students
+                                    enrolled and a maximum of 8.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- dash card end -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- first column end -->
+                  <!-- second column -->
+                  <div class="col m12 l7 px-m-0">
+                    <div class="section ml-30">
+                      <div class="row">
+                        <div class="col m12 l8 offset-l4">
+                          <ul class="tabs embark-tabs tabs-compact mr-5">
+                            <li class="tab col s12 m4">
+                              <a class="active" href="#squad">All</a>
+                            </li>
+                            <li class="tab col s12 m4">
+                              <a href="#students">Students</a>
+                            </li>
+                            <li class="tab col s12 m4">
+                              <a href="#squadleaders">Squad Leaders</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="row mt-50">
+                        <div class="col s12 profiles">
+                          <div id="squad">
+                            <div class="col s6 l4">
+                              <div class="dash-card shadow profile">
+                                <div class="profile-image">
+                                  <img
+                                    src="./media/profile/user-1.png"
+                                    alt=""
+                                  />
+                                  <div class="icon">
+                                    <img
+                                      src="./media/profile/teammate-icon.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <p class="name my-0">Brad Moon</p>
+                                <p class="small designation embark-text my-2">
+                                  Program leader
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col s6 l4">
+                              <div class="dash-card shadow profile">
+                                <div class="profile-image">
+                                  <img
+                                    src="./media/profile/user-2.png"
+                                    alt=""
+                                  />
+                                  <div class="icon">
+                                    <img
+                                      src="./media/profile/teammate-icon.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <p class="name my-0">Danielle Kenedy</p>
+                                <p class="small designation embark-text my-2">
+                                  Student success advisor
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col s6 l4">
+                              <div class="dash-card shadow profile">
+                                <div class="profile-image">
+                                  <img
+                                    src="./media/profile/person.svg"
+                                    alt=""
+                                  />
+                                  <div class="icon">
+                                    <img
+                                      src="./media/profile/teammate-icon.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <p class="name my-0">Firstname Lastname</p>
+                                <p class="small designation embark-text my-2">
+                                  Account executive position
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col s6 l4">
+                              <div class="dash-card shadow profile">
+                                <div class="profile-image">
+                                  <img
+                                    src="./media/profile/person.svg"
+                                    alt=""
+                                  />
+                                  <div class="icon">
+                                    <img
+                                      src="./media/profile/teammate-icon.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <p class="name my-0">Firstname Lastname</p>
+                                <p class="small designation embark-text my-2">
+                                  Travel advisor
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col s6 l4">
+                              <div class="dash-card shadow profile">
+                                <div class="profile-image">
+                                  <img
+                                    src="./media/profile/person.svg"
+                                    alt=""
+                                  />
+                                  <div class="icon">
+                                    <img
+                                      src="./media/profile/paper-wrap.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <p class="name my-0">Firstname Lastname</p>
+                                <p class="small designation embark-text my-2">
+                                  Student
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col s6 l4">
+                              <div class="dash-card shadow profile">
+                                <div class="profile-image">
+                                  <img
+                                    src="./media/profile/person.svg"
+                                    alt=""
+                                  />
+                                  <div class="icon">
+                                    <img
+                                      src="./media/profile/paper-wrap.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <p class="name my-0">Firstname Lastname</p>
+                                <p class="small designation embark-text my-2">
+                                  Student
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col s6 l4">
+                              <div class="dash-card shadow profile">
+                                <div class="profile-image">
+                                  <img
+                                    src="./media/profile/person.svg"
+                                    alt=""
+                                  />
+                                  <div class="icon">
+                                    <img
+                                      src="./media/profile/paper-wrap.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <p class="name my-0">Firstname Lastname</p>
+                                <p class="small designation embark-text my-2">
+                                  Student
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col s6 l4">
+                              <div class="dash-card shadow profile">
+                                <div class="profile-image">
+                                  <img
+                                    src="./media/profile/person.svg"
+                                    alt=""
+                                  />
+                                  <div class="icon">
+                                    <img
+                                      src="./media/profile/paper-wrap.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <p class="name my-0">Firstname Lastname</p>
+                                <p class="small designation embark-text my-2">
+                                  Student
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col s6 l4">
+                              <div class="dash-card shadow profile">
+                                <div class="profile-image">
+                                  <img
+                                    src="./media/profile/person.svg"
+                                    alt=""
+                                  />
+                                  <div class="icon">
+                                    <img
+                                      src="./media/profile/paper-wrap.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <p class="name my-0">Firstname Lastname</p>
+                                <p class="small designation embark-text my-2">
+                                  Student
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col s6 l4">
+                              <div class="dash-card shadow profile">
+                                <div class="profile-image">
+                                  <img
+                                    src="./media/profile/person.svg"
+                                    alt=""
+                                  />
+                                  <div class="icon">
+                                    <img
+                                      src="./media/profile/paper-wrap.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <p class="name my-0">Firstname Lastname</p>
+                                <p class="small designation embark-text my-2">
+                                  Student
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col s6 l4">
+                              <div class="dash-card shadow profile">
+                                <div class="profile-image">
+                                  <img
+                                    src="./media/profile/person.svg"
+                                    alt=""
+                                  />
+                                  <div class="icon">
+                                    <img
+                                      src="./media/profile/paper-wrap.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <p class="name my-0">Firstname Lastname</p>
+                                <p class="small designation embark-text my-2">
+                                  Student
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col s6 l4">
+                              <div class="dash-card shadow profile">
+                                <div class="profile-image">
+                                  <img
+                                    src="./media/profile/person.svg"
+                                    alt=""
+                                  />
+                                  <div class="icon">
+                                    <img
+                                      src="./media/profile/paper-wrap.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <p class="name my-0">Firstname Lastname</p>
+                                <p class="small designation embark-text my-2">
+                                  Student
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div id="students">
+                            <div class="col s6 l4">
+                              <div class="dash-card shadow profile">
+                                <div class="profile-image">
+                                  <img
+                                    src="./media/profile/person.svg"
+                                    alt=""
+                                  />
+                                  <div class="icon">
+                                    <img
+                                      src="./media/profile/paper-wrap.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <p class="name my-0">Firstname Lastname</p>
+                                <p class="small designation embark-text my-2">
+                                  Student
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col s6 l4">
+                              <div class="dash-card shadow profile">
+                                <div class="profile-image">
+                                  <img
+                                    src="./media/profile/person.svg"
+                                    alt=""
+                                  />
+                                  <div class="icon">
+                                    <img
+                                      src="./media/profile/paper-wrap.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <p class="name my-0">Firstname Lastname</p>
+                                <p class="small designation embark-text my-2">
+                                  Student
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col s6 l4">
+                              <div class="dash-card shadow profile">
+                                <div class="profile-image">
+                                  <img
+                                    src="./media/profile/person.svg"
+                                    alt=""
+                                  />
+                                  <div class="icon">
+                                    <img
+                                      src="./media/profile/paper-wrap.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <p class="name my-0">Firstname Lastname</p>
+                                <p class="small designation embark-text my-2">
+                                  Student
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col s6 l4">
+                              <div class="dash-card shadow profile">
+                                <div class="profile-image">
+                                  <img
+                                    src="./media/profile/person.svg"
+                                    alt=""
+                                  />
+                                  <div class="icon">
+                                    <img
+                                      src="./media/profile/paper-wrap.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <p class="name my-0">Firstname Lastname</p>
+                                <p class="small designation embark-text my-2">
+                                  Student
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col s6 l4">
+                              <div class="dash-card shadow profile">
+                                <div class="profile-image">
+                                  <img
+                                    src="./media/profile/person.svg"
+                                    alt=""
+                                  />
+                                  <div class="icon">
+                                    <img
+                                      src="./media/profile/paper-wrap.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <p class="name my-0">Firstname Lastname</p>
+                                <p class="small designation embark-text my-2">
+                                  Student
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col s6 l4">
+                              <div class="dash-card shadow profile">
+                                <div class="profile-image">
+                                  <img
+                                    src="./media/profile/person.svg"
+                                    alt=""
+                                  />
+                                  <div class="icon">
+                                    <img
+                                      src="./media/profile/paper-wrap.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <p class="name my-0">Firstname Lastname</p>
+                                <p class="small designation embark-text my-2">
+                                  Student
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col s6 l4">
+                              <div class="dash-card shadow profile">
+                                <div class="profile-image">
+                                  <img
+                                    src="./media/profile/person.svg"
+                                    alt=""
+                                  />
+                                  <div class="icon">
+                                    <img
+                                      src="./media/profile/paper-wrap.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <p class="name my-0">Firstname Lastname</p>
+                                <p class="small designation embark-text my-2">
+                                  Student
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col s6 l4">
+                              <div class="dash-card shadow profile">
+                                <div class="profile-image">
+                                  <img
+                                    src="./media/profile/person.svg"
+                                    alt=""
+                                  />
+                                  <div class="icon">
+                                    <img
+                                      src="./media/profile/paper-wrap.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <p class="name my-0">Firstname Lastname</p>
+                                <p class="small designation embark-text my-2">
+                                  Student
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div id="squadleaders">
+                            <div class="col s6 l4">
+                              <div class="dash-card shadow profile">
+                                <div class="profile-image">
+                                  <img
+                                    src="./media/profile/user-1.png"
+                                    alt=""
+                                  />
+                                  <div class="icon">
+                                    <img
+                                      src="./media/profile/teammate-icon.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <p class="name my-0">Brad Moon</p>
+                                <p class="small designation embark-text my-2">
+                                  Program leader
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col s6 l4">
+                              <div class="dash-card shadow profile">
+                                <div class="profile-image">
+                                  <img
+                                    src="./media/profile/user-2.png"
+                                    alt=""
+                                  />
+                                  <div class="icon">
+                                    <img
+                                      src="./media/profile/teammate-icon.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <p class="name my-0">Danielle Kenedy</p>
+                                <p class="small designation embark-text my-2">
+                                  Student success advisor
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col s6 l4">
+                              <div class="dash-card shadow profile">
+                                <div class="profile-image">
+                                  <img
+                                    src="./media/profile/person.svg"
+                                    alt=""
+                                  />
+                                  <div class="icon">
+                                    <img
+                                      src="./media/profile/teammate-icon.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <p class="name my-0">Firstname Lastname</p>
+                                <p class="small designation embark-text my-2">
+                                  Account executive position
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col s6 l4">
+                              <div class="dash-card shadow profile">
+                                <div class="profile-image">
+                                  <img
+                                    src="./media/profile/person.svg"
+                                    alt=""
+                                  />
+                                  <div class="icon">
+                                    <img
+                                      src="./media/profile/teammate-icon.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <p class="name my-0">Firstname Lastname</p>
+                                <p class="small designation embark-text my-2">
+                                  Travel advisor
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second column end -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- dashboard inner content end -->
+      <!-- dashboard left menu compact bar -->
+      <div id="leftmenu">
+        <div class="toggle-bar">
+          <a
+            href="#"
+            data-target="dashboard-nav-expanded"
+            class="sidenav-trigger"
+            ><i class="fa fa-bars fa-2x" aria-hidden="true"></i
+          ></a>
+        </div>
+        <div class="menu-items">
+          <ul class="compact-menu">
+            <li>
+              <a title="registration and pricing" href="#"
+                ><img src="./media/menu-icons/registration-white.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a title="itinerary" href="dashboard_itinerary.html"
+                ><img src="./media/menu-icons/itinerary-white.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a title="squad" href="dashboard_squad.html"
+                ><img src="./media/menu-icons/squade-white.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a title="to-dos" href="dashboard_task.html"
+                ><img src="./media/menu-icons/todos-white.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a title="document checklist" href="dashboard_document.html"
+                ><img src="./media/menu-icons/checklist-white.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a title="account settings" href="#"
+                ><img src="./media/menu-icons/settings-white.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a title="contact support" href="#"
+                ><img src="./media/menu-icons/faq-white.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- dashboard left menu compact bar end -->
+    </main>
+    <!-- footer -->
+    <footer class="section" id="footer">
+      <div class="row">
+        <div class="section container">
+          <div class="col s12 m6 m-center-align">
+            <img class="mt-20" src="./media/logo-white.png" alt="emabark" />
+            <p class="small">Legal copy to go here about with Direct Travel</p>
+          </div>
+          <div class="col s12 m3">
+            <div class="footer-widget">
+              <ul class="text-U">
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Our Partners</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col s12 m3">
+            <div class="footer-widget">
+              <ul class="text-U">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom col s12 center-align">
+        <div class="divider"></div>
+        <p>&copy; 2022 ApplyBoard Inc</p>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <!-- dashboard nav expanded -->
+    <div id="dashboard-nav-expanded" class="sidenav">
+      <div class="nav-body">
+        <div class="profile text-center">
+          <img src="./media/user.png" alt="" />
+          <p>Hello <span class="d-block bold">Student Name</span></p>
+        </div>
+        <div class="navigation">
+          <ul class="collapsible expandable">
+            <li>
+              <div class="collapsible-header">
+                Dashboard<i class="fa fa-caret-down"></i>
+              </div>
+              <div class="collapsible-body">
+                <ul class="extended-menu">
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./media/menu-icons/registration.svg"
+                        alt=""
+                      />registration and pricing</a
+                    >
+                  </li>
+                  <li>
+                    <a href="dashboard_itinerary.html"
+                      ><img
+                        src="./media/menu-icons/itinerary.svg"
+                        alt=""
+                      />itinerary</a
+                    >
+                  </li>
+                  <li>
+                    <a href="dashboard_squad.html"
+                      ><img src="./media/menu-icons/squad.svg" alt="" />squad</a
+                    >
+                  </li>
+                  <li>
+                    <a href="dashboard_task.html"
+                      ><img
+                        src="./media/menu-icons/todos.svg"
+                        alt=""
+                      />to-dos</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./media/menu-icons/checklist.svg"
+                        alt=""
+                      />document checklist</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                Settings<i class="fa fa-caret-down"></i>
+              </div>
+              <div class="collapsible-body">
+                <ul class="extended-menu">
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./media/menu-icons/settings.svg"
+                        alt=""
+                      />account settings</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./media/menu-icons/account.svg"
+                        alt=""
+                      />security and privacy</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                Help<i class="fa fa-caret-down"></i>
+              </div>
+              <div class="collapsible-body">
+                <ul class="extended-menu">
+                  <li>
+                    <a href="#"
+                      ><img src="./media/menu-icons/faq.svg" alt="" />contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <a class="btn mt-50 embark-blue d-block" href="index.html">log out</a>
+        </div>
+      </div>
+      <div class="nav-footer">
+        <a class="sidenav-close" href="#"
+          ><img src="./media/back-left.png" alt=""
+        /></a>
+      </div>
+    </div>
+    <!-- dashboard nav expanded end -->
+    <!-- notification left bar -->
+    <div id="notification-sidebar" class="sidenav">
+      <div class="notification-head">
+        <a class="sidenav-close" href="#"
+          ><img src="./media/back-right.png" alt=""
+        /></a>
+      </div>
+      <div class="container">
+        <div class="row">
+          <h2>Notification</h2>
+        </div>
+      </div>
+    </div>
+    <!-- notification left bar end -->
+    <!--JavaScript at end of body for optimized loading-->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

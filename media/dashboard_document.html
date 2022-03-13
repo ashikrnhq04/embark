@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <header id="header" class="navbar-fixed dashboar-navbar">
+      <nav class="nav-wrapper white">
+        <div class="row">
+          <div class="col s12 offset-l1 l11">
+            <div class="row">
+              <div class="col s4 l4">
+                <div class="brand">
+                  <a href="dashboard_blank.html" class="brand-logo"
+                    ><img src="./media/embark-logo.png" alt=""
+                  /></a>
+                </div>
+              </div>
+              <div class="col s8 l8">
+                <div class="user-area">
+                  <button class="btn red hide-on-med-and-down">Pay Now</button>
+                  <a class="hide-on-large-only" href="#"
+                    ><img src="./media/donate.png" alt=""
+                  /></a>
+                  <a
+                    href="#"
+                    data-target="notification-sidebar"
+                    class="sidenav-trigger close-notification"
+                    class="embark-text"
+                    ><i class="fa fa-bell-o fa-2x" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><img class="user-image" src="./media/user.png" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="dashboard">
+      <!-- dashboard inner content -->
+      <div class="dashboard-container">
+        <div class="row">
+          <div class="col s12 offset-l1 l11">
+            <div class="dashboard-inner-content">
+              <div class="dashboard-inner-content-header">
+                <div class="row d-flex align-base">
+                  <div class="col s12 m6">
+                    <div class="section text-m-center">
+                      <h2 class="heading-big embark-text">
+                        my document portfolio
+                      </h2>
+                    </div>
+                  </div>
+                  <div class="col s12 m6">
+                    <div class="section text-right text-m-center">
+                      <a href="#" class="btn embark-blue waves-effect d-m-block"
+                        >print documents list</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard-inner-content-body">
+                <div class="row">
+                  <!-- first column -->
+                  <div class="col s12 l8 px-m-0">
+                    <div class="section">
+                      <!-- task -->
+                      <div id="predeparture">
+                        <div class="row">
+                          <div class="col s12 tasklists mt-30">
+                            <div class="timeline"></div>
+                            <ul class="collapsible expandable">
+                              <li class="embark-tasklist task--green">
+                                <div class="collapsible-header">
+                                  <div class="title d-block text-strike">
+                                    Event title header name
+                                  </div>
+                                  <div class="time">
+                                    <p class="small d-flex align-center">
+                                      <span
+                                        class="left fa fa-clock-o mr-5"
+                                      ></span
+                                      >Date or time
+                                    </p>
+                                  </div>
+                                  <div class="icon d-flex align-center">
+                                    <span class="fa fa-star-o"></span>
+                                    <span class="fa fa-chevron-up"></span>
+                                  </div>
+                                  <div class="timelinedot">
+                                    <div class="activetask active"></div>
+                                  </div>
+                                </div>
+                                <div class="collapsible-body">
+                                  <h6>Location</h6>
+                                  <p class="description">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Explicabo laudantium eos
+                                    totam nisi ullam nam corrupti dolore illo
+                                    ut, natus quaerat, porro dicta officia!
+                                    Ducimus quis cum sunt maxime quaerat.
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="embark-tasklist task--orange">
+                                <div class="collapsible-header">
+                                  <div class="title d-block">
+                                    Event title header name
+                                  </div>
+                                  <div class="time">
+                                    <p class="small d-flex align-center">
+                                      <span
+                                        class="left fa fa-clock-o mr-5"
+                                      ></span
+                                      >Date or time
+                                    </p>
+                                  </div>
+                                  <div class="icon d-flex align-center">
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-chevron-up"></span>
+                                  </div>
+                                  <div class="timelinedot">
+                                    <div class="activetask"></div>
+                                  </div>
+                                </div>
+                                <div class="collapsible-body">
+                                  <h6>Location</h6>
+                                  <p class="description">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Explicabo laudantium eos
+                                    totam nisi ullam nam corrupti dolore illo
+                                    ut, natus quaerat, porro dicta officia!
+                                    Ducimus quis cum sunt maxime quaerat.
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="embark-tasklist active">
+                                <div class="collapsible-header">
+                                  <div class="title d-block">
+                                    Event title header name
+                                  </div>
+                                  <div class="time">
+                                    <p class="small d-flex align-center">
+                                      <span
+                                        class="left fa fa-clock-o mr-5"
+                                      ></span
+                                      >Date or time
+                                    </p>
+                                  </div>
+                                  <div class="icon d-flex align-center">
+                                    <span class="fa fa-star-o"></span>
+                                    <span class="fa fa-chevron-down"></span>
+                                  </div>
+                                  <div class="timelinedot">
+                                    <div class="activetask"></div>
+                                  </div>
+                                </div>
+                                <div class="collapsible-body">
+                                  <h6>Location</h6>
+                                  <p class="description">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Explicabo laudantium eos
+                                    totam nisi ullam nam corrupti dolore illo
+                                    ut, natus quaerat, porro dicta officia!
+                                    Ducimus quis cum sunt maxime quaerat.
+                                  </p>
+                                  <h6>Details</h6>
+                                  <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat.
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="embark-tasklist">
+                                <div class="collapsible-header">
+                                  <div class="title d-block">
+                                    Event title header name
+                                  </div>
+                                  <div class="time">
+                                    <p class="small d-flex align-center">
+                                      <span
+                                        class="left fa fa-clock-o mr-5"
+                                      ></span
+                                      >Date or time
+                                    </p>
+                                  </div>
+                                  <div class="icon d-flex align-center">
+                                    <span class="fa fa-star-o"></span>
+                                    <span class="fa fa-chevron-up"></span>
+                                  </div>
+                                  <div class="timelinedot">
+                                    <div class="activetask"></div>
+                                  </div>
+                                </div>
+                                <div class="collapsible-body">
+                                  <h6>Location</h6>
+                                  <p class="description">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Explicabo laudantium eos
+                                    totam nisi ullam nam corrupti dolore illo
+                                    ut, natus quaerat, porro dicta officia!
+                                    Ducimus quis cum sunt maxime quaerat.
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="embark-tasklist">
+                                <div class="collapsible-header">
+                                  <div class="title d-block">
+                                    Event title header name
+                                  </div>
+                                  <div class="time">
+                                    <p class="small d-flex align-center">
+                                      <span
+                                        class="left fa fa-clock-o mr-5"
+                                      ></span
+                                      >Date or time
+                                    </p>
+                                  </div>
+                                  <div class="icon d-flex align-center">
+                                    <span class="fa fa-star-o"></span>
+                                    <span class="fa fa-chevron-up"></span>
+                                  </div>
+                                  <div class="timelinedot">
+                                    <div class="activetask"></div>
+                                  </div>
+                                </div>
+                                <div class="collapsible-body">
+                                  <h6>Location</h6>
+                                  <p class="description">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Explicabo laudantium eos
+                                    totam nisi ullam nam corrupti dolore illo
+                                    ut, natus quaerat, porro dicta officia!
+                                    Ducimus quis cum sunt maxime quaerat.
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="embark-tasklist">
+                                <div class="collapsible-header">
+                                  <div class="title d-block">
+                                    Event title header name
+                                  </div>
+                                  <div class="time">
+                                    <p class="small d-flex align-center">
+                                      <span
+                                        class="left fa fa-clock-o mr-5"
+                                      ></span
+                                      >Date or time
+                                    </p>
+                                  </div>
+                                  <div class="icon d-flex align-center">
+                                    <span class="fa fa-star-o"></span>
+                                    <span class="fa fa-chevron-up"></span>
+                                  </div>
+                                  <div class="timelinedot">
+                                    <div class="activetask"></div>
+                                  </div>
+                                </div>
+                                <div class="collapsible-body">
+                                  <h6>Location</h6>
+                                  <p class="description">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Explicabo laudantium eos
+                                    totam nisi ullam nam corrupti dolore illo
+                                    ut, natus quaerat, porro dicta officia!
+                                    Ducimus quis cum sunt maxime quaerat.
+                                  </p>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- task end -->
+                    </div>
+                  </div>
+                  <!-- first column end -->
+                  <!-- second column -->
+                  <div class="col s12 l4">
+                    <div class="row">
+                      <div class="col s12">
+                        <div class="section embark-events">
+                          <h6 class="small text-uppercase text-gray">
+                            Upcoming events
+                          </h6>
+                          <!-- events -->
+                          <ul class="collapsible expandable">
+                            <li class="embark-event dash-card active mb-0">
+                              <div class="collapsible-header">
+                                <div class="icon">
+                                  <span class="fa fa-chevron-up"></span>
+                                </div>
+                              </div>
+                              <div class="collapsible-body">
+                                <div class="event-content">
+                                  <p class="title my-0">
+                                    Event title header name
+                                  </p>
+                                  <p class="small bold">
+                                    Saturday Jan 2, 2022 – 18:00 - 19:00
+                                  </p>
+                                </div>
+                                <div class="event-content event-green">
+                                  <p class="title my-0">
+                                    Event title header name
+                                  </p>
+                                  <p class="small bold">
+                                    Saturday Jan 2, 2022 – 18:00 - 19:00
+                                  </p>
+                                </div>
+                                <div class="event-content event-orange">
+                                  <p class="title my-0">
+                                    Event title header name
+                                  </p>
+                                  <p class="small bold">
+                                    Saturday Jan 2, 2022 – 18:00 - 19:00
+                                  </p>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                          <!-- events end -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second column end -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- dashboard inner content end -->
+      <!-- dashboard left menu compact bar -->
+      <div id="leftmenu">
+        <div class="toggle-bar">
+          <a
+            href="#"
+            data-target="dashboard-nav-expanded"
+            class="sidenav-trigger"
+            ><i class="fa fa-bars fa-2x" aria-hidden="true"></i
+          ></a>
+        </div>
+        <div class="menu-items">
+          <ul class="compact-menu">
+            <li>
+              <a title="registration and pricing" href="#"
+                ><img src="./media/menu-icons/registration-white.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a title="itinerary" href="dashboard_itinerary.html"
+                ><img src="./media/menu-icons/itinerary-white.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a title="squad" href="dashboard_squad.html"
+                ><img src="./media/menu-icons/squade-white.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a title="to-dos" href="dashboard_task.html"
+                ><img src="./media/menu-icons/todos-white.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a title="document checklist" href="dashboard_document.html"
+                ><img src="./media/menu-icons/checklist-white.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a title="account settings" href="#"
+                ><img src="./media/menu-icons/settings-white.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a title="contact support" href="#"
+                ><img src="./media/menu-icons/faq-white.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- dashboard left menu compact bar end -->
+    </main>
+    <!-- footer -->
+    <footer class="section" id="footer">
+      <div class="row">
+        <div class="section container">
+          <div class="col s12 m6 m-center-align">
+            <img class="mt-20" src="./media/logo-white.png" alt="emabark" />
+            <p class="small">Legal copy to go here about with Direct Travel</p>
+          </div>
+          <div class="col s12 m3">
+            <div class="footer-widget">
+              <ul class="text-U">
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Our Partners</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col s12 m3">
+            <div class="footer-widget">
+              <ul class="text-U">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom col s12 center-align">
+        <div class="divider"></div>
+        <p>&copy; 2022 ApplyBoard Inc</p>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <!-- dashboard nav expanded -->
+    <div id="dashboard-nav-expanded" class="sidenav">
+      <div class="nav-body">
+        <div class="profile text-center">
+          <img src="./media/user.png" alt="" />
+          <p>Hello <span class="d-block bold">Student Name</span></p>
+        </div>
+        <div class="navigation">
+          <ul class="collapsible expandable">
+            <li>
+              <div class="collapsible-header">
+                Dashboard<i class="fa fa-caret-down"></i>
+              </div>
+              <div class="collapsible-body">
+                <ul class="extended-menu">
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./media/menu-icons/registration.svg"
+                        alt=""
+                      />registration and pricing</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./media/menu-icons/itinerary.svg"
+                        alt=""
+                      />itinerary</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./media/menu-icons/squad.svg" alt="" />squad</a
+                    >
+                  </li>
+                  <li>
+                    <a href="dashboard_task.html"
+                      ><img
+                        src="./media/menu-icons/todos.svg"
+                        alt=""
+                      />to-dos</a
+                    >
+                  </li>
+                  <li>
+                    <a href="dashboard_document.html"
+                      ><img
+                        src="./media/menu-icons/checklist.svg"
+                        alt=""
+                      />document checklist</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                Settings<i class="fa fa-caret-down"></i>
+              </div>
+              <div class="collapsible-body">
+                <ul class="extended-menu">
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./media/menu-icons/settings.svg"
+                        alt=""
+                      />account settings</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./media/menu-icons/account.svg"
+                        alt=""
+                      />security and privacy</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                Help<i class="fa fa-caret-down"></i>
+              </div>
+              <div class="collapsible-body">
+                <ul class="extended-menu">
+                  <li>
+                    <a href="#"
+                      ><img src="./media/menu-icons/faq.svg" alt="" />contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <a class="btn mt-50 embark-blue d-block" href="index.html">log out</a>
+        </div>
+      </div>
+      <div class="nav-footer">
+        <a class="sidenav-close" href="#"
+          ><img src="./media/back-left.png" alt=""
+        /></a>
+      </div>
+    </div>
+    <!-- dashboard nav expanded end -->
+    <!-- notification left bar -->
+    <div id="notification-sidebar" class="sidenav">
+      <div class="notification-head">
+        <a class="sidenav-close" href="#"
+          ><img src="./media/back-right.png" alt=""
+        /></a>
+      </div>
+      <div class="container">
+        <div class="row">
+          <h2>Notification</h2>
+        </div>
+      </div>
+    </div>
+    <!-- notification left bar end -->
+    <!--JavaScript at end of body for optimized loading-->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

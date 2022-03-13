@@ -1,21 +1,24 @@
 #footer {
-  background: $footerbackground;
-  color: lighten($embark-text, 100%);
+  background: #002e75;
+  color: white;
 
-  @media #{$medium-and-down} {
-    text-align: center;
-  }
   .footer-widget {
     line-height: 40px;
   }
+
   a,
   p {
-    color: lighten($embark-text, 100%);
+    color: white;
   }
-  .footer-bottom {
-    p {
-      margin-bottom: 0px;
-      color: #fff;
-    }
+
+  .footer-bottom p {
+    margin-bottom: 0px;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #footer {
+    text-align: center;
   }
 }
