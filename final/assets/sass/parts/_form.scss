@@ -1,0 +1,323 @@
+.form-outer {
+  padding: 20px;
+  padding-top: 30px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: 1fr;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+
+  .heading-big {
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .btn {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form-outer {
+    padding: 15px;
+
+    /*     margin: 40px 20px;
+    */
+  }
+}
+
+form {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+
+  .col {
+    padding: 0 !important;
+
+    &:nth-child(odd) {
+      padding-right: 3px !important;
+    }
+
+    &:nth-child(even) {
+      padding-left: 3px !important;
+    }
+  }
+
+  .input-control {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    input {
+      &[type="text"],
+      &[type="email"],
+      &[type="number"],
+      &[type="password"] {
+        height: auto;
+        background: #fff;
+        border: 1px solid #11142d;
+        border-radius: 5px;
+        padding: 10px 20px;
+        width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+        color: #11142d;
+      }
+
+      &[type="text"]:focus,
+      &[type="email"]:focus,
+      &[type="number"]:focus,
+      &[type="password"]:focus {
+        border-bottom: 1px solid #11142d !important;
+        box-shadow: unset !important;
+      }
+
+      &[type="text"]::placeholder,
+      &[type="email"]::placeholder,
+      &[type="number"]::placeholder,
+      &[type="password"]::placeholder {
+        color: #616d92;
+      }
+    }
+
+    label,
+    .label {
+      font-family: "Montserrat", sans-serif;
+      padding-left: 20px;
+      color: #11142d;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 1px;
+      cursor: pointer;
+    }
+
+    .btn {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    [type="checkbox"].filled-in:checked + span:not(.lever):after {
+      background: #1e6deb;
+      border: 2px solid #1e6deb;
+    }
+
+    .small {
+      label,
+      .label {
+        text-transform: inherit;
+        padding-left: 0;
+      }
+    }
+
+    &.password {
+      position: relative;
+    }
+
+    .icon {
+      position: absolute;
+      right: 8px;
+      margin-top: 12px;
+      cursor: pointer;
+      z-index: 20;
+    }
+
+    select {
+      display: block;
+      padding: 10px 20px;
+      position: relative;
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+
+      &:after {
+        content: "\f078";
+        right: 10px;
+        font-family: "Font Awesome";
+        position: absolute;
+      }
+
+      &:focus {
+        outline: 1px solid #f5f8ff;
+      }
+    }
+
+    .radio {
+      label,
+      .label {
+        padding: 0;
+      }
+
+      p {
+        &:first-child {
+          label span,
+          .label span {
+            border-right: none;
+            border-radius: 5px 0px 0px 5px;
+            -webkit-border-radius: 5px 0px 0px 5px;
+            -moz-border-radius: 5px 0px 0px 5px;
+            -ms-border-radius: 5px 0px 0px 5px;
+            -o-border-radius: 5px 0px 0px 5px;
+          }
+        }
+
+        &:last-child {
+          label span,
+          .label span {
+            border-left: none;
+            border-radius: 0px 5px 5px 0px;
+            -moz-border-radius: 0px 5px 5px 0px;
+            -ms-border-radius: 0px 5px 5px 0px;
+            -o-border-radius: 0px 5px 5px 0px;
+            -webkit-border-radius: 0px 5px 5px 0px;
+            -moz-border-radius: 5px 5px 0px 0px;
+          }
+        }
+      }
+
+      input[type="radio"] {
+        + span {
+          width: 50%;
+          padding: 10px 15px;
+          text-align: center;
+          height: auto;
+          border: 1px solid #11142d;
+        }
+
+        &:checked + span {
+          background: #1e6deb;
+          color: #fff;
+
+          &:after,
+          &:before {
+            content: unset;
+          }
+        }
+
+        &:not(:checked) + span {
+          background: #fff;
+          color: #1e6deb;
+
+          &:after,
+          &:before {
+            content: unset;
+          }
+        }
+      }
+    }
+  }
+
+  .form_part {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  form .col:nth-child(odd) {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  form .col:nth-child(even) {
+    padding-left: 0;
+  }
+}
+
+body.passwordrecovery form .btn[type="submit"] {
+  text-transform: capitalize;
+}
+
+.step-indicator {
+  display: none;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  margin: 30px auto;
+
+  &.w60 {
+    width: 60%;
+  }
+
+  &.space-between {
+    justify-content: space-between;
+  }
+
+  &.space-around {
+    justify-content: space-around;
+  }
+
+  .line {
+    width: 0;
+    height: 4px;
+    background: #1e6deb;
+    left: 0;
+    position: absolute;
+    z-index: 10;
+  }
+
+  .dot {
+    width: 32px;
+    height: 32px;
+    border: 4px solid #1e6deb;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    background: #fff;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+
+    &.active:after {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background: #1e6deb;
+      border-radius: 100%;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      -ms-border-radius: 100%;
+      -o-border-radius: 100%;
+    }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #b9bfd5;
+    left: 0;
+  }
+
+  &.active {
+    display: flex;
+  }
+
+  .estimated-time {
+    position: absolute;
+    top: -20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .step-indicator.w60 {
+    width: 100%;
+  }
+}

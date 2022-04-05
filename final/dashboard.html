@@ -68,16 +68,12 @@
             <div class="dashboard-inner-content">
               <div class="dashboard-inner-content-header">
                 <div class="row d-flex align-base">
-                  <div class="col s12 m6">
+                  <div class="col s12 m12">
                     <div class="section text-m-center">
-                      <h2 class="heading-big embark-text">my itinerary</h2>
-                    </div>
-                  </div>
-                  <div class="col s12 m6">
-                    <div class="section text-right text-m-center">
-                      <a href="#" class="btn embark-blue waves-effect d-m-block"
-                        >download itinerary</a
-                      >
+                      <img src="./media/user.png" alt="" />
+                      <h2 class="heading-big embark-text mt-0">
+                        Hello, user name!
+                      </h2>
                     </div>
                   </div>
                 </div>
@@ -87,249 +83,362 @@
                   <!-- first column -->
                   <div class="col s12 l8 px-m-0">
                     <div class="section">
-                      <div class="row">
-                        <div class="col s12">
-                          <ul class="tabs embark-tabs tabs-compact">
-                            <li class="tab col s12 m3">
-                              <a class="active bold" href="#collapsibleElement"
-                                >PRE-DEPARTURE</a
+                      <!-- task -->
+                      <div class="welcometodash">
+                        <div
+                          class="col s12 l4 show-on-small hide-on-med-and-up"
+                        >
+                          <div class="img-absolute">
+                            <img src="./media/graduationcap.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="col s12 l8">
+                          <h2>Welcome back to your Embark dashboard.</h2>
+                          <p>
+                            Small blurb about seeing what they missed. Ut enim
+                            ad minim veniam, quis nostrud exercitation ullamco.
+                          </p>
+                        </div>
+                        <div
+                          class="col s12 l4 show-on-large hide-on-med-and-down"
+                        >
+                          <div class="img-absolute">
+                            <img src="./media/graduationcap.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- task end -->
+                    </div>
+                    <div class="row">
+                      <div class="col s12">
+                        <h6 class="text-grey text-uppercase">quick links</h6>
+                        <div class="quick-links">
+                          <ul class="quick-links-menu">
+                            <li>
+                              <a href="dashboard_ticket.html"
+                                ><div class="image-background">
+                                  <img
+                                    src="./media/menu-icons/ticket.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                my tickets</a
                               >
                             </li>
-                            <li class="tab col s12 m3">
-                              <a class="bold" href="#departure">DEPARTURE</a>
+                            <li>
+                              <a href="dashboard_itinerary.html"
+                                ><div class="image-background">
+                                  <img
+                                    src="./media/menu-icons/itinerary.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                itinerary</a
+                              >
                             </li>
-                            <li class="tab col s12 m3">
-                              <a class="bold" href="#arrival">ARRIVAL</a>
+                            <li>
+                              <a href="dashboard_squad.html"
+                                ><div class="image-background">
+                                  <img
+                                    src="./media/menu-icons/squad.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                squad</a
+                              >
                             </li>
-                            <li class="tab col s12 m3">
-                              <a class="bold" href="#firstweekexperience"
-                                >FIRST WEEK EXPERIENCE</a
+                            <li>
+                              <a href="dashboard_task.html"
+                                ><div class="image-background">
+                                  <img
+                                    src="./media/menu-icons/todos.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                to-dos</a
+                              >
+                            </li>
+                            <li>
+                              <a href="dashboard_document.html"
+                                ><div class="image-background">
+                                  <img
+                                    src="./media/menu-icons/checklist.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                document checklist</a
                               >
                             </li>
                           </ul>
                         </div>
                       </div>
-                      <!-- itinerary -->
-                      <div id="collapsibleElement" class="itinerary">
-                        <div class="row">
-                          <div class="col s12 tasklists mt-30">
-                            <div class="timeline"></div>
-                            <ul class="collapsible expandable">
-                              <li class="embark-tasklist task--success">
-                                <div class="collapsible-header">
-                                  <div class="title d-block text-strike">
-                                    Event title header name
+                      <div class="col l6 s12">
+                        <h6 class="text-grey text-uppercase">My Task</h6>
+                        <div id="collapsibleElement">
+                          <div class="row">
+                            <div class="col s12 tasklists mt-30">
+                              <div class="timeline"></div>
+                              <ul class="collapsible expandable">
+                                <li class="embark-tasklist task--success">
+                                  <div class="collapsible-header">
+                                    <div class="title d-block text-strike">
+                                      Event title header name
+                                    </div>
+                                    <div class="time">
+                                      <p class="small d-flex align-center">
+                                        <span
+                                          class="left fa fa-clock-o mr-5"
+                                        ></span
+                                        >Date or time
+                                      </p>
+                                    </div>
+                                    <div class="icon d-flex align-center">
+                                      <span class="fa fa-star-o"></span>
+                                      <span class="fa fa-chevron-up"></span>
+                                      <span class="fa fa-chevron-down"></span>
+                                    </div>
+                                    <div class="timelinedot">
+                                      <div class="activetask active"></div>
+                                    </div>
                                   </div>
-                                  <div class="time">
-                                    <p class="small d-flex align-center">
-                                      <span
-                                        class="left fa fa-clock-o mr-5"
-                                      ></span
-                                      >Date or time
+                                  <div class="collapsible-body">
+                                    <h6>Location</h6>
+                                    <p class="description">
+                                      Lorem ipsum dolor sit amet consectetur
+                                      adipisicing elit. Explicabo laudantium eos
+                                      totam nisi ullam nam corrupti dolore illo
+                                      ut, natus quaerat, porro dicta officia!
+                                      Ducimus quis cum sunt maxime quaerat.
+                                    </p>
+                                    <form class="task-form" action="">
+                                      <p class="radio task--success">
+                                        <label>
+                                          <input
+                                            type="radio"
+                                            name="task1"
+                                            checked
+                                          />
+                                          <span>
+                                            <span class="border-around">
+                                              sub task title here
+                                            </span>
+                                          </span>
+                                        </label>
+                                      </p>
+                                      <p class="radio task--warning">
+                                        <label>
+                                          <input name="task1" type="radio" />
+                                          <span
+                                            ><span class="border-around">
+                                              sub task title here
+                                            </span></span
+                                          >
+                                        </label>
+                                      </p>
+                                    </form>
+                                  </div>
+                                </li>
+                                <li class="embark-tasklist task--warning">
+                                  <div class="collapsible-header">
+                                    <div class="title d-block">
+                                      Event title header name
+                                    </div>
+                                    <div class="time">
+                                      <p class="small d-flex align-center">
+                                        <span
+                                          class="left fa fa-clock-o mr-5"
+                                        ></span
+                                        >Date or time
+                                      </p>
+                                    </div>
+                                    <div class="icon d-flex align-center">
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-chevron-up"></span>
+                                      <span class="fa fa-chevron-down"></span>
+                                    </div>
+                                    <div class="timelinedot">
+                                      <div class="activetask"></div>
+                                    </div>
+                                  </div>
+                                  <div class="collapsible-body"></div>
+                                </li>
+                                <li class="embark-tasklist">
+                                  <div class="collapsible-header">
+                                    <div class="title d-block">
+                                      Event title header name
+                                    </div>
+                                    <div class="time">
+                                      <p class="small d-flex align-center">
+                                        <span
+                                          class="left fa fa-clock-o mr-5"
+                                        ></span
+                                        >Date or time
+                                      </p>
+                                    </div>
+                                    <div class="icon d-flex align-center">
+                                      <span class="fa fa-star-o"></span>
+                                      <span class="fa fa-chevron-up"></span
+                                      ><span class="fa fa-chevron-down"></span>
+                                    </div>
+                                    <div class="timelinedot">
+                                      <div class="activetask"></div>
+                                    </div>
+                                  </div>
+                                  <div class="collapsible-body">
+                                    <h6>Location</h6>
+                                    <p class="description">
+                                      Lorem ipsum dolor sit amet consectetur
+                                      adipisicing elit. Explicabo laudantium eos
+                                      totam nisi ullam nam corrupti dolore illo
+                                      ut, natus quaerat, porro dicta officia!
+                                      Ducimus quis cum sunt maxime quaerat.
+                                    </p>
+                                    <h6>Details</h6>
+                                    <p>
+                                      Lorem ipsum dolor sit amet, consectetur
+                                      adipiscing elit, sed do eiusmod tempor
+                                      incididunt ut labore et dolore magna
+                                      aliqua. Ut enim ad minim veniam, quis
+                                      nostrud exercitation ullamco laboris nisi
+                                      ut aliquip ex ea commodo consequat.
                                     </p>
                                   </div>
-                                  <div class="icon d-flex align-center">
-                                    <span class="fa fa-star-o"></span>
-                                    <span class="fa fa-chevron-up"></span>
-                                    <span class="fa fa-chevron-down"></span>
-                                  </div>
-                                  <div class="timelinedot">
-                                    <div class="activetask active"></div>
-                                  </div>
-                                </div>
-                                <div class="collapsible-body">
-                                  <h6>Location</h6>
-                                  <p class="description">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Explicabo laudantium eos
-                                    totam nisi ullam nam corrupti dolore illo
-                                    ut, natus quaerat, porro dicta officia!
-                                    Ducimus quis cum sunt maxime quaerat.
-                                  </p>
-                                </div>
-                              </li>
-                              <li class="embark-tasklist task--warning">
-                                <div class="collapsible-header">
-                                  <div class="title d-block">
-                                    Event title header name
-                                  </div>
-                                  <div class="time">
-                                    <p class="small d-flex align-center">
-                                      <span
-                                        class="left fa fa-clock-o mr-5"
-                                      ></span
-                                      >Date or time
-                                    </p>
-                                  </div>
-                                  <div class="icon d-flex align-center">
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-chevron-up"></span>
-                                    <span class="fa fa-chevron-down"></span>
-                                  </div>
-                                  <div class="timelinedot">
-                                    <div class="activetask"></div>
-                                  </div>
-                                </div>
-                                <div class="collapsible-body">
-                                  <h6>Location</h6>
-                                  <p class="description">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Explicabo laudantium eos
-                                    totam nisi ullam nam corrupti dolore illo
-                                    ut, natus quaerat, porro dicta officia!
-                                    Ducimus quis cum sunt maxime quaerat.
-                                  </p>
-                                </div>
-                              </li>
-                              <li class="embark-tasklist active">
-                                <div class="collapsible-header">
-                                  <div class="title d-block">
-                                    Event title header name
-                                  </div>
-                                  <div class="time">
-                                    <p class="small d-flex align-center">
-                                      <span
-                                        class="left fa fa-clock-o mr-5"
-                                      ></span
-                                      >Date or time
-                                    </p>
-                                  </div>
-                                  <div class="icon d-flex align-center">
-                                    <span class="fa fa-star-o"></span>
-                                    <span class="fa fa-chevron-up"></span>
-                                    <span class="fa fa-chevron-down"></span>
-                                  </div>
-                                  <div class="timelinedot">
-                                    <div class="activetask"></div>
-                                  </div>
-                                </div>
-                                <div class="collapsible-body">
-                                  <h6>Location</h6>
-                                  <p class="description">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Explicabo laudantium eos
-                                    totam nisi ullam nam corrupti dolore illo
-                                    ut, natus quaerat, porro dicta officia!
-                                    Ducimus quis cum sunt maxime quaerat.
-                                  </p>
-                                  <h6>Details</h6>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                    Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip
-                                    ex ea commodo consequat.
-                                  </p>
-                                </div>
-                              </li>
-                              <li class="embark-tasklist">
-                                <div class="collapsible-header">
-                                  <div class="title d-block">
-                                    Event title header name
-                                  </div>
-                                  <div class="time">
-                                    <p class="small d-flex align-center">
-                                      <span
-                                        class="left fa fa-clock-o mr-5"
-                                      ></span
-                                      >Date or time
-                                    </p>
-                                  </div>
-                                  <div class="icon d-flex align-center">
-                                    <span class="fa fa-star-o"></span>
-                                    <span class="fa fa-chevron-up"></span>
-                                    <span class="fa fa-chevron-down"></span>
-                                  </div>
-                                  <div class="timelinedot">
-                                    <div class="activetask"></div>
-                                  </div>
-                                </div>
-                                <div class="collapsible-body">
-                                  <h6>Location</h6>
-                                  <p class="description">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Explicabo laudantium eos
-                                    totam nisi ullam nam corrupti dolore illo
-                                    ut, natus quaerat, porro dicta officia!
-                                    Ducimus quis cum sunt maxime quaerat.
-                                  </p>
-                                </div>
-                              </li>
-                              <li class="embark-tasklist">
-                                <div class="collapsible-header">
-                                  <div class="title d-block">
-                                    Event title header name
-                                  </div>
-                                  <div class="time">
-                                    <p class="small d-flex align-center">
-                                      <span
-                                        class="left fa fa-clock-o mr-5"
-                                      ></span
-                                      >Date or time
-                                    </p>
-                                  </div>
-                                  <div class="icon d-flex align-center">
-                                    <span class="fa fa-star-o"></span>
-                                    <span class="fa fa-chevron-up"></span>
-                                    <span class="fa fa-chevron-down"></span>
-                                  </div>
-                                  <div class="timelinedot">
-                                    <div class="activetask"></div>
-                                  </div>
-                                </div>
-                                <div class="collapsible-body">
-                                  <h6>Location</h6>
-                                  <p class="description">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Explicabo laudantium eos
-                                    totam nisi ullam nam corrupti dolore illo
-                                    ut, natus quaerat, porro dicta officia!
-                                    Ducimus quis cum sunt maxime quaerat.
-                                  </p>
-                                </div>
-                              </li>
-                              <li class="embark-tasklist">
-                                <div class="collapsible-header">
-                                  <div class="title d-block">
-                                    Event title header name
-                                  </div>
-                                  <div class="time">
-                                    <p class="small d-flex align-center">
-                                      <span
-                                        class="left fa fa-clock-o mr-5"
-                                      ></span
-                                      >Date or time
-                                    </p>
-                                  </div>
-                                  <div class="icon d-flex align-center">
-                                    <span class="fa fa-star-o"></span>
-                                    <span class="fa fa-chevron-up"></span>
-                                    <span class="fa fa-chevron-down"></span>
-                                  </div>
-                                  <div class="timelinedot">
-                                    <div class="activetask"></div>
-                                  </div>
-                                </div>
-                                <div class="collapsible-body">
-                                  <h6>Location</h6>
-                                  <p class="description">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Explicabo laudantium eos
-                                    totam nisi ullam nam corrupti dolore illo
-                                    ut, natus quaerat, porro dicta officia!
-                                    Ducimus quis cum sunt maxime quaerat.
-                                  </p>
-                                </div>
-                              </li>
-                            </ul>
+                                </li>
+                              </ul>
+                              <a
+                                href="dashboard_task.html"
+                                class="btn btn-block embark-blue"
+                                >View
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <div id="departure">Departure</div>
-                      <div id="arrival">Arrival</div>
-                      <div id="firstweekexperience">First week experience</div>
-                      <!-- itinerary end -->
+                      <div class="col l6 s12">
+                        <h6 class="text-grey text-uppercase">my documents</h6>
+                        <div id="collapsibleElement" class="events">
+                          <div class="row">
+                            <div class="col s12 tasklists mt-30">
+                              <div class="timeline"></div>
+                              <ul class="collapsible expandable">
+                                <li class="embark-tasklist task--green">
+                                  <div class="collapsible-header">
+                                    <div class="title d-block text-strike">
+                                      Event title header name
+                                    </div>
+                                    <div class="time">
+                                      <p class="small d-flex align-center">
+                                        <span
+                                          class="left fa fa-clock-o mr-5"
+                                        ></span
+                                        >Date or time
+                                      </p>
+                                    </div>
+                                    <div class="icon d-flex align-center">
+                                      <span class="fa fa-star-o"></span>
+                                      <span class="fa fa-chevron-up"></span>
+                                      <span class="fa fa-chevron-down"></span>
+                                    </div>
+                                    <div class="timelinedot">
+                                      <div class="activetask active"></div>
+                                    </div>
+                                  </div>
+                                  <div class="collapsible-body">
+                                    <h6>Location</h6>
+                                    <p class="description">
+                                      Lorem ipsum dolor sit amet consectetur
+                                      adipisicing elit. Explicabo laudantium eos
+                                      totam nisi ullam nam corrupti dolore illo
+                                      ut, natus quaerat, porro dicta officia!
+                                      Ducimus quis cum sunt maxime quaerat.
+                                    </p>
+                                  </div>
+                                </li>
+                                <li class="embark-tasklist task--orange">
+                                  <div class="collapsible-header">
+                                    <div class="title d-block">
+                                      Event title header name
+                                    </div>
+                                    <div class="time">
+                                      <p class="small d-flex align-center">
+                                        <span
+                                          class="left fa fa-clock-o mr-5"
+                                        ></span
+                                        >Date or time
+                                      </p>
+                                    </div>
+                                    <div class="icon d-flex align-center">
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-chevron-up"></span>
+                                      <span class="fa fa-chevron-down"></span>
+                                    </div>
+                                    <div class="timelinedot">
+                                      <div class="activetask"></div>
+                                    </div>
+                                  </div>
+                                  <div class="collapsible-body">
+                                    <h6>Location</h6>
+                                    <p class="description">
+                                      Lorem ipsum dolor sit amet consectetur
+                                      adipisicing elit. Explicabo laudantium eos
+                                      totam nisi ullam nam corrupti dolore illo
+                                      ut, natus quaerat, porro dicta officia!
+                                      Ducimus quis cum sunt maxime quaerat.
+                                    </p>
+                                  </div>
+                                </li>
+                                <li class="embark-tasklist">
+                                  <div class="collapsible-header">
+                                    <div class="title d-block">
+                                      Event title header name
+                                    </div>
+                                    <div class="time">
+                                      <p class="small d-flex align-center">
+                                        <span
+                                          class="left fa fa-clock-o mr-5"
+                                        ></span
+                                        >Date or time
+                                      </p>
+                                    </div>
+                                    <div class="icon d-flex align-center">
+                                      <span class="fa fa-star-o"></span>
+                                      <span class="fa fa-chevron-up"></span>
+                                      <span class="fa fa-chevron-down"></span>
+                                    </div>
+                                    <div class="timelinedot">
+                                      <div class="activetask"></div>
+                                    </div>
+                                  </div>
+                                  <div class="collapsible-body">
+                                    <h6>Location</h6>
+                                    <p class="description">
+                                      Lorem ipsum dolor sit amet consectetur
+                                      adipisicing elit. Explicabo laudantium eos
+                                      totam nisi ullam nam corrupti dolore illo
+                                      ut, natus quaerat, porro dicta officia!
+                                      Ducimus quis cum sunt maxime quaerat.
+                                    </p>
+                                    <h6>Details</h6>
+                                    <p>
+                                      Lorem ipsum dolor sit amet, consectetur
+                                      adipiscing elit, sed do eiusmod tempor
+                                      incididunt ut labore et dolore magna
+                                      aliqua. Ut enim ad minim veniam, quis
+                                      nostrud exercitation ullamco laboris nisi
+                                      ut aliquip ex ea commodo consequat.
+                                    </p>
+                                  </div>
+                                </li>
+                              </ul>
+                              <a
+                                href="dashboard_document.html"
+                                class="btn btn-block embark-blue"
+                                >View
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <!-- first column end -->
@@ -658,7 +767,7 @@
                     >
                   </li>
                   <li>
-                    <a href="#"
+                    <a href="dashboard_itinerary.html"
                       ><img
                         src="./media/menu-icons/itinerary.svg"
                         alt=""
@@ -739,7 +848,7 @@
       </div>
     </div>
     <!-- dashboard nav expanded end -->
-    <!-- notification left bar -->
+    <!-- notification right bar -->
     <div id="notification-sidebar" class="sidenav">
       <div class="notification-head">
         <a class="sidenav-close" href="#"
@@ -954,7 +1063,7 @@
         </div>
       </div>
     </div>
-    <!-- notification left bar end -->
+    <!-- notification right bar end -->
     <!--JavaScript at end of body for optimized loading-->
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

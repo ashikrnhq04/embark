@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!--Import Google Icon Font-->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
     <!--Import materialize.css-->
     <link
       rel="stylesheet"
@@ -21,20 +16,19 @@
       rel="stylesheet"
     />
     <link href="./assets/css/font-awesome.min.css" rel="stylesheet" />
-
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <body>
-    <header id="header" class="navbar-fixed dashboard-navbar">
+    <header id="header" class="navbar-fixed">
       <nav class="white">
         <div class="nav-wrapper container">
           <a href="index.html" class="brand-logo left"
             ><img src="./media/embark-logo.png" alt=""
           /></a>
           <a href="#" data-target="mobile-nav" class="sidenav-trigger right"
-            ><i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-          </a>
+            ><i class="fa fa-bars fa-2x" aria-hidden="true"></i
+          ></a>
           <ul id="navigation-list" class="right hide-on-med-and-down">
             <li><a href="#" class="embark-text">Overview</a></li>
             <li><a href="#" class="embark-text">Experience</a></li>
@@ -97,61 +91,20 @@
         </div>
       </nav>
     </header>
-    <main class="login">
+    <main class="passwordrecovery">
       <!-- login form -->
       <div class="seciton row">
         <div class="container">
           <div class="col s12 l6">
             <div class="form-outer">
-              <div class="form-content content-wrapper">
-                <h2 class="heading-big center-align">
-                  Log in to your Embark account
-                </h2>
+              <div class="form-content content-wrapper center-align">
+                <h2 class="heading-big">Reset Password</h2>
+                <h3 class="embark-text">Success</h3>
+                <p>Return to the login screen to access your account.</p>
               </div>
-              <form action="dashboard.html">
-                <div class="input-control">
-                  <label for="email">email</label>
-                  <input
-                    id="email"
-                    type="text"
-                    name="email"
-                    placeholder="email"
-                  />
-                </div>
-                <div class="input-control password">
-                  <label for="password">password</label>
-                  <input
-                    id="password"
-                    type="password"
-                    name="password"
-                    placeholder="password"
-                  />
-                  <i class="icon fa fa-eye"></i>
-                  <div class="mb-10">
-                    <a
-                      href="recovery-pass.html"
-                      class="right bold small embark-text"
-                      >Forgot passowrd?</a
-                    >
-                  </div>
-                </div>
-                <div class="input-control">
-                  <button
-                    class="btn d-block embark-blue waves-effect waves-white bold"
-                    type="submit"
-                  >
-                    Log in
-                  </button>
-                  <div class="center-align">
-                    <p class="small">
-                      Don't have an account?
-                      <a class="bold embark-text" href="signup.html"
-                        >Sign up now</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </form>
+              <a href="login.html" class="d-block btn embark-blue"
+                >return to log in</a
+              >
             </div>
           </div>
         </div>
